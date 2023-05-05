@@ -8,9 +8,14 @@ console.log(Vue)
 
 // PROVA 1
 const app = Vue.createApp({
-    data: function() {
+    data() {
         return {
-            message: `Hello!`
+            message: `"Now you're playing with power, PORTABLE POWER!"`,
+            h1Class: `h1-prova`,
+            image: `GB.jpg`,
+            imgCSS: [`img-prova`, `rounded`],
+            labelCSS: `label-prova`,
+            input: ``
         }
     }
 });

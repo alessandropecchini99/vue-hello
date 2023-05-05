@@ -1,13 +1,29 @@
 body {
-    background-color: grey;
-    color: white;
+    background-color: #A3B434;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
-    color: violet;
-    text-shadow: black 3px 3px;
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-prova {
+    color: #0E3B00;
+    text-shadow: black 2px 2px;
+}
+
+.img-prova {
+    width: 700px;
+    object-fit: cover;
+    border: #0E3B00 5px solid;
+}
+
+.label-prova {
+    margin-top: 3em;
 }
