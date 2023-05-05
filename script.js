@@ -17,7 +17,7 @@ const app = Vue.createApp({
         return {
             // text da inserire nell'h1 + css
             message: `"Now you're playing with power, PORTABLE POWER!"`,
-            h1Class: `h1-Vue-class`,
+            h1Class: `h1-Vue-GB`,
 
             // immgini da mostrare a schermo + css
             htmlIMG: `<img src="GB.jpg" class="img-v-html rounded">`,
@@ -30,9 +30,11 @@ const app = Vue.createApp({
             labelText: `v-model & @keyup.enter:`,
             input: ``,
             // prova methods / v-on:click + css
-            btn: `btn_saluti`,
+            btn: `btn_GB`,
             // prova event
-            labelEvent: `Scrivo ogni lettera in console:`
+            labelEvent: `Scrivo ogni lettera in console:`,
+            // change-color
+            changeBtn: `btn_GB`
         }
     },
     // prova methods - diversi metodi di settarli e di riportare i dati
@@ -53,6 +55,15 @@ const app = Vue.createApp({
         },
         clickConsole(event, text) {
             console.log(text + event.key)
+        },
+        changeColor() {
+            if (this.h1Class == `h1-Vue-GB`) {
+                this.h1Class = `h1-Vue-class`;
+                this.changeBtn = `btn_class`;
+            } else {
+                this.h1Class = `h1-Vue-GB`;
+                this.changeBtn = `btn_GB`;
+            }
         }
     }
 });

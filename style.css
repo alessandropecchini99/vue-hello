@@ -23,6 +23,12 @@ h4 {
     text-shadow: #5f4d1d 0px 7px;
 }
 
+.h1-Vue-GB {
+    background-color: #A3B434;
+    color: #0E3B00;
+    text-shadow: black 2px 2px;
+}
+
 .h1-normal-class {
     border: #0E3B00 3px solid;
     padding: 10px;
@@ -44,13 +50,24 @@ h4 {
     margin-top: 2em;
 }
 
-.btn_saluti {
+.btn_GB {
     background-color: #A3B434;
     border: #0E3B00 3px solid;
     border-radius: 20px;
     padding: 5px 10px;
     margin-inline: 0.5em;
     color: #0E3B00;
+    font-weight: bold;
+}
+
+.btn_class {
+    background-color: #68558e;
+    border: #0E3B00 3px solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-inline: 0.5em;
+    color: #feec2d;
+    text-shadow: #5f4d1d 0px 7px;
     font-weight: bold;
 }
 
