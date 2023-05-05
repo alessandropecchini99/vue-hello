@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+h4 {
+    margin: 0;
+}
+
 .h1-Vue-class {
     background-color: #68558e;
     color: #feec2d;

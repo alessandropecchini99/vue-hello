@@ -31,6 +31,8 @@ const app = Vue.createApp({
             input: ``,
             // prova methods / v-on:click + css
             btn: `btn_saluti`,
+            // prova event
+            labelEvent: `Scrivo ogni lettera in console:`
         }
     },
     // prova methods - diversi metodi di settarli e di riportare i dati
@@ -48,6 +50,9 @@ const app = Vue.createApp({
         clickBtn() {
             console.log(`hai cliccato Enter!`)
             this.input = ``
+        },
+        clickConsole(event, text) {
+            console.log(text + event.key)
         }
     }
 });

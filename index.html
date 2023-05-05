@@ -43,6 +43,12 @@
                 <h4>Scrivo: {{ input }}</h4>
             </div>
 
+            <!-- scrivo ogni lettera in console -->
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <label for="prova-event">{{ labelEvent }}</label>
+                <input type="text" name="prova-event" placeholder="scrivi qui qualcosa!" @keyup="clickConsole($event, `tasto cliccato: `)">
+            </div>
+
             <div class="d-flex justify-content-center align-items-center">
                 <!-- provo v-on:click e methods -->
                 <button :class="btn" v-on:click="saluto">saluto</button>
