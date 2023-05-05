@@ -13,17 +13,43 @@ body {
     justify-content: center;
 }
 
-.h1-prova {
-    color: #0E3B00;
-    text-shadow: black 2px 2px;
+.h1-Vue-class {
+    background-color: #68558e;
+    color: #feec2d;
+    text-shadow: #5f4d1d 0px 7px;
 }
 
-.img-prova {
+.h1-normal-class {
+    border: #0E3B00 3px solid;
+    padding: 10px;
+}
+
+.img-v-html {
     width: 700px;
     object-fit: cover;
-    border: #0E3B00 5px solid;
+    border: white 5px solid;
 }
 
-.label-prova {
-    margin-top: 3em;
+.img-v-bind {
+    width: 700px;
+    object-fit: cover;
+    border: black 5px solid;
+}
+
+.div-prova {
+    margin-top: 2em;
+}
+
+.btn_saluti {
+    background-color: #A3B434;
+    border: #0E3B00 3px solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-inline: 0.5em;
+    color: #0E3B00;
+    font-weight: bold;
+}
+
+.btn_saluti:hover {
+    background-color: #84922b;
 }

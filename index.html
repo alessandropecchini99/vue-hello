@@ -20,12 +20,37 @@
   <body>
 
     <div id="app">
-        <h1 class="" v-bind:class="h1Class">{{ message }}</h1>
-        <img :src="image" :class="imgCSS">
 
-        <label for="prova-vmodel" :class="labelCSS">Prova v-model</label>
-        <input type="text" name="prova-vmodel" placeholder="scrivi qui qualcosa!" v-model="input">
-        <h3>{{ input }}</h3>
+        <!-- inserisco testo tramite Vue -->
+        <h1 class="h1-normal-class" v-bind:class="h1Class">{{ message }}</h1>
+
+        <!-- inserisco due immagini in modo diverso -->
+        <div class="d-flex">
+            <!-- bordo bianco - metodo 1: v-html -->
+            <div v-html="htmlIMG"></div>
+            <!-- bordo nero - metodo 2: v-bind -->
+            <img :src="image" :class="imgCSS">
+        </div>
+
+
+        <!-- ALTRE PROVE -->    
+        <div class="d-flex justify-content-around w-100" :class="divCSS">
+
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <!-- provo v-model -->
+                <label for="prova-vmodel">{{ labelText }}</label>
+                <input type="text" name="prova-vmodel" placeholder="scrivi qui qualcosa!" v-model="input" @keyup.enter="clickBtn">
+                <h4>Scrivo: {{ input }}</h4>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <!-- provo v-on:click e methods -->
+                <button :class="btn" v-on:click="saluto">saluto</button>
+                <button :class="btn" @click="slogan">Slogan!</button>
+            </div>
+
+        </div>
+
     </div>
 
   </body>
