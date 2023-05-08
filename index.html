@@ -58,6 +58,39 @@
 
         </div>
 
+        <!-- PROVA V-IF -->
+        <div class="text-center">
+          <h1 v-if="varBooleana">PROVA V-IF TRUE</h1>
+          <h3 v-else>PROVA V-IF FALSE</h3>
+          <button @click="toggleVar" :class="btn">Toggle button</button>
+          <p v-show="varBooleana">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex repudiandae obcaecati, sed dolores excepturi ipsam nobis earum? Neque veniam deleniti eos aut nulla labore illum adipisci tempora esse nam.</p>
+        </div>
+
+        <!-- PROVA V-FOR -->
+        <div>
+          <h3>--- PROVA V-FOR ---</h3>
+          <ul>
+            <li v-for="value in arrNomi">{{ value }}</li>
+
+            <hr>
+
+            <template v-for="(value, index) in arrNomi" :key="value">
+              <li v-if="index < 2">{{ value }} in index {{ index }}</li>
+            </template>
+
+            <hr>
+
+            <template v-for="(value, index) in arrNomi" :key="value">
+              <li>{{ value }} in index {{ index }}</li>
+            </template>
+
+            <hr>
+
+            <li v-for="num in 5"> {{ num }} </li>
+
+          </ul>
+        </div>
+
     </div>
 
   </body>

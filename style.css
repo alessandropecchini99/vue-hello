@@ -71,6 +71,6 @@ h4 {
     font-weight: bold;
 }
 
-.btn_saluti:hover {
+.btn_GB:hover, .btn_class:hover, .btn:hover {
     background-color: #84922b;
 }

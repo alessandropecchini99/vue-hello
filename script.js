@@ -34,8 +34,13 @@ const app = Vue.createApp({
             // prova event
             labelEvent: `Scrivo ogni lettera in console:`,
             // change-color
-            changeBtn: `btn_GB`
-        }
+            changeBtn: `btn_GB`,
+            // V-IF
+            varBooleana: true,
+            // V-FOR
+            arrNomi: [`Alessandro`, `Lisa`, `Domenico`, `Chiara`, `Martina`],
+            arrFrase: [`Ciao`, `sono`, `arrivato`, `qua`, `finalmente!`]
+        };
     },
     // prova methods - diversi metodi di settarli e di riportare i dati
     methods:  {
@@ -64,7 +69,11 @@ const app = Vue.createApp({
                 this.h1Class = `h1-Vue-GB`;
                 this.changeBtn = `btn_GB`;
             }
-        }
+        },
+        // V-IF
+        toggleVar() {
+            this.varBooleana = !this.varBooleana;
+        },
     }
 });
 
