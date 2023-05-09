@@ -1,6 +1,5 @@
 body {
     background-color: #A3B434;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +31,7 @@ h4 {
 .h1-normal-class {
     border: #0E3B00 3px solid;
     padding: 10px;
+    margin-top: 1em;
 }
 
 .img-v-html {
